@@ -8,30 +8,33 @@
 </head>
 <body>
 <div class="container mt-4">
-    <form th:action="@{/addPersona}" th:object="${personas}" method="post">
-        <div class="card">
-            <div class="card-header">
-                <h3>Agregar Personas</h3>
-            </div>
-            <div class="card-body">
-                <div class="form-group">
-                    <label>Nombre</label>
-                    <label>
-                        <input th:field="*{name}" type="text" class="form-control">
-                    </label>
+    <div class="colum-sm-6">
+        <form th:action="@{/addPersona}" th:object="${personas}" method="post">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Agregar Personas</h3>
                 </div>
-                <div class="form-group">
-                    <label>Telefono</label>
-                    <label>
-                        <input th:field="*{telefono}" type="tel" class="form-control">
-                    </label>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>
+                            Nombre
+                            <input th:field="*{name}" type="text" class="form-control">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Telefono
+                            <input th:field="*{telefono}" type="tel" class="form-control">
+                        </label>
+                    </div>
+
+                </div>
+                <div class="card-footer">
+                    <input type="submit" value="Agregar" class="btn btn-success">
                 </div>
             </div>
-            <div class="card-footer">
-                <input type="submit" value="Agregar" class="btn btn-success">
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 </body>
 </html>
