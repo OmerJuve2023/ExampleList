@@ -34,6 +34,6 @@ public class Controlador {
     @PostMapping("/addPersona")
     public String save(@Validated Persona p, Model model) {
         service.save(p);
-        return "redirect:/index";
+        return "redirect:/";
     }
 }
