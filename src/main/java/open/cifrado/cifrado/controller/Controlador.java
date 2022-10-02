@@ -18,7 +18,7 @@ public class Controlador {
     @Autowired
     private PersonaService service;
 
-    @GetMapping(value = "/index")
+    @GetMapping(value = "/")
     public String listar(Model model) {
         List<Persona> personas = service.listar();
         model.addAttribute("personas", personas);
