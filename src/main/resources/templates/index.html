@@ -7,9 +7,10 @@
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-<div class="container my-2" th:align="center">
+<div class="container mt-4" >
+    <a th:href="@{/addPersona}" class="btn btn-primary">Nuevo</a>
     <table class="table">
-        <thead>
+        <thead th:align="center">
         <tr>
             <th>ID</th>
             <th>NOMBRES</th>
@@ -17,7 +18,7 @@
             <th>ACCIONES</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody th:align="center">
         <tr th:each="personas:${personas}">
             <td th:text="${personas.id}"></td>
             <td th:text="${personas.name}"></td>

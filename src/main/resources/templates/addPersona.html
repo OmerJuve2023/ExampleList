@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+<div class="container mt-4">
+    <form th:action="@{/addPersona}" th:object="${personas}" method="post">
+        <div class="card">
+            <div class="card-header">
+                <h3>Agregar Personas</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <label>
+                        <input th:field="*{name}" type="text" class="form-control">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Telefono</label>
+                    <label>
+                        <input th:field="*{telefono}" type="tel" class="form-control">
+                    </label>
+                </div>
+            </div>
+            <div class="card-footer">
+                <input type="submit" value="Agregar" class="btn btn-success">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
