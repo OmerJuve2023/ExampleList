@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>open.cifrado</groupId>
 	<artifactId>cifrado</artifactId>
-	<version>0.7</version>
+	<version>0.8</version>
 	<name>Cifrados</name>
 	<description>Cifrados complejos</description>
 	<properties>

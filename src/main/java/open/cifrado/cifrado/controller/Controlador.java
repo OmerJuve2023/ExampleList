@@ -18,7 +18,7 @@ public class Controlador {
     @Autowired
     private PersonaService service;
 
-    @GetMapping(value = "/listar")
+    @GetMapping(value = "/index")
     public String listar(Model model) {
         List<Persona> personas = service.listar();
         model.addAttribute("personas", personas);
@@ -34,6 +34,6 @@ public class Controlador {
     @PostMapping("/addPersona")
     public String save(@Validated Persona p, Model model) {
         service.save(p);
-        return "redirect:/listar";
+        return "redirect:/index";
     }
 }
