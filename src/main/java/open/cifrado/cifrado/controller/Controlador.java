@@ -1,6 +1,5 @@
 package open.cifrado.cifrado.controller;
 
-import open.cifrado.cifrado.interfaces.IPersona;
 import open.cifrado.cifrado.modelo.Persona;
 import open.cifrado.cifrado.services.PersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
